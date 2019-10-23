@@ -33,7 +33,7 @@ class VKTask(Task):
         msg = self.tmp_message.format(
             named
         )
-        print('send masg:', msg)
+       send_msg(msg)
 
 tm.append_task(VKTask('Доброе утро моя {}. Надеюсь ты уже открыла глазки и готова встретить замечательный новый день! Люблю тебя =*', 10, 00))
 tm.append_task(VKTask('Добрый день моя {}. Надеюсь ты полна сил чтобы радоваться этому дню дальше! Люблю тебя =*', 14, 00))
